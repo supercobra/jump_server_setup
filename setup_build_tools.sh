@@ -28,7 +28,7 @@ log_info "Installing build essentials..."
   sudo -E apt-get -y install build-essential
 
 log_info "Installing libraries for common gem dependencies..."
-  sudo -E apt-get -y install libxslt1-dev libcurl4-openssl-dev libksba8 libksba-dev libreadline-dev libssl-dev zlib1g-dev libsnappy-dev libyaml-dev
+  sudo -E apt-get -y install libxslt1-dev libcurl4-openssl-dev libksba8 libksba-dev libreadline-dev libssl-dev zlib1g-dev libsnappy-dev libyaml-dev libffi-dev
 
 log_info "Installing curl..."
   sudo -E apt-get -y install curl
