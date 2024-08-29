@@ -2,7 +2,7 @@
 
 This setup allows multiple users to share the same home directory while maintaining proper permissions and security.
 
-## What the Script Does
+## What the script does
 
 Script to set up multiple users sharing the same home directory
 
@@ -17,3 +17,11 @@ Script to set up multiple users sharing the same home directory
 Usage:
 
     sudo ./setup_shared_home.sh user1 user2 user3
+
+## Optionally setup_build_tools.sh
+
+This script installs build tools and libraries that are commonly needed for software development for ruby and ruby gems.
+
+Usage:
+
+    sudo ./setup_build_tools.sh
