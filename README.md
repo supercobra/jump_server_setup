@@ -1,4 +1,4 @@
-# Jump ssh server with shared home directory
+# README: Jump ssh server with shared home directory
 
 This setup allows multiple users to share the same home directory while maintaining proper permissions and security.
 
