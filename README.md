@@ -18,6 +18,10 @@ Usage:
 
     sudo ./setup_shared_home.sh user1 user2 user3
 
+To install the script, run:
+
+    bash <(wget -qO- https://raw.githubusercontent.com/supercobra/jump_server_setup/master/setup_shared_home.sh)
+
 ## Optionally setup_build_tools.sh
 
 This script installs build tools and libraries that are commonly needed for software development for ruby and ruby gems.
