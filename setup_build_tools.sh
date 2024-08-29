@@ -33,7 +33,8 @@ log_info "Installing libraries for common gem dependencies..."
 log_info "Installing curl..."
   sudo -E apt-get -y install curl
 
-  if [[ ! -d "$HOME/.rbenv" ]]; then
+  # if rbenv is already installed we rm it and install it again
+  rm -rf $HOME/.rbenv
   log_info "Installing rbenv ..."
     git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 
