@@ -66,21 +66,5 @@ log_info "Updating to latest Rubygems version..."
 
 log_info "Installing Bundler..."
   gem install bundler
-if [[ ! -d "$HOME/.rbenv" ]]; then
-  log_info "Installing rbenv..."
-    git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 
-    if ! grep -qs "rbenv init" ~/.bashrc; then
-      printf 'export PATH="$HOME/.rbenv/bin:$PATH"\n' >> ~/.bashrc
-      printf 'eval "$(rbenv init - --no-rehash)"\n' >> ~/.bashrc
-    fi
-
-    export PATH="$HOME/.rbenv/bin:$PATH"
-    eval "$(rbenv init -)"
-fi
-
-if [[ ! -d "$HOME/.rbenv/plugins/ruby-build" ]]; then
-  log_info "Installing ruby-build, to install Rubies..."
-    git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
-fi
-
+echo "Done."
